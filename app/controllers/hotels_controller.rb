@@ -3,7 +3,7 @@ class HotelsController < ApplicationController
 
   # GET /hotels
   def index
-    @hotels = Hotel.all
+    @hotels = Hotel.search(params)
 
     render json: @hotels
   end

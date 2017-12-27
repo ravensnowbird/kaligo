@@ -38,18 +38,18 @@
           <div class="col-12 my-auto">
             <div class="masthead-content text-white py-5 py-md-0">
               <h1 class="mb-3">Kaligo</h1>
-              <form role="form">
+              <div role="form">
               <br style="clear:both">
 
               <div class="row">
               <div class="col-md-6">
                 <div class="form-group">
-      						<input type="text" class="form-control datepicker" style="padding: .375rem .75rem;" id="name" name="checkin" placeholder="Check-in" required>
+      						<input type="text" class="form-control datepicker" style="padding: .375rem .75rem;" id="checkin" name="checkin" placeholder="Check-in" required>
       					</div>
               </div>
               <div class="col-md-6">
                 <div class="form-group">
-      						<input type="text" class="form-control datepicker" style="padding: .375rem .75rem;" id="name" name="checkout" placeholder="Check-out" required>
+      						<input type="text" class="form-control datepicker" style="padding: .375rem .75rem;" id="checkout" name="checkout" placeholder="Check-out" required>
       					</div>
               </div>
               </div>
@@ -65,12 +65,36 @@
                 </div>
 
               <button type="button" id="submit" name="submit" class="btn btn-secondary">Search</button>
-              </form>
+              </div>
 
             </div>
           </div>
         </div>
       </div>
+    </div>
+    
+    <div class="results-div">
+      <div class="container h-100">
+        <div class="row h-100">
+          <div class="col-12 my-auto">
+            <div class="masthead-content text-white py-5 py-md-0">
+              <h2 class="mb-3">Results</h2>
+              <table id="results-table" class="table table-striped">
+        <thead class="">
+          <tr> 
+            <th scope="col">Airline</th>
+            <th scope="col">Price</th>
+            <th scope="col">Supplier</th>
+          </tr>
+        </thead>
+        <tbody>
+        </tbody>
+      </table>
+            </div>
+          </div>
+        </div>
+      </div>
+      
     </div>
 
     <!-- Bootstrap core JavaScript -->

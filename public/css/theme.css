@@ -170,3 +170,10 @@ body {
   background-color: #2b476b;
   border: 1px solid #768faf;
 }
+.results-div {
+    position: fixed;
+    right: 300px;
+    top:  15rem;
+    width: 400px;
+    text-align: center;
+}

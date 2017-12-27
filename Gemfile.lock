@@ -41,12 +41,16 @@ GEM
     arel (8.0.0)
     builder (3.2.3)
     byebug (9.1.0)
+    cachy (0.4.2)
+      mini_memory_store
     concurrent-ruby (1.0.5)
     crass (1.0.3)
     erubi (1.7.0)
     ffi (1.9.18)
     globalid (0.4.1)
       activesupport (>= 4.2.0)
+    httparty (0.15.6)
+      multi_xml (>= 0.5.2)
     i18n (0.9.1)
       concurrent-ruby (~> 1.0)
     listen (3.1.5)
@@ -59,9 +63,12 @@ GEM
     mail (2.7.0)
       mini_mime (>= 0.1.1)
     method_source (0.9.0)
+    mini_memory_store (0.1.0)
     mini_mime (1.0.0)
     mini_portile2 (2.3.0)
     minitest (5.10.3)
+    moneta (1.0.0)
+    multi_xml (0.6.0)
     nio4r (2.1.0)
     nokogiri (1.8.1)
       mini_portile2 (~> 2.3.0)
@@ -123,7 +130,10 @@ PLATFORMS
 
 DEPENDENCIES
   byebug
+  cachy
+  httparty
   listen (>= 3.0.5, < 3.2)
+  moneta
   puma (~> 3.7)
   rails (~> 5.1.4)
   spring
@@ -132,4 +142,4 @@ DEPENDENCIES
   tzinfo-data
 
 BUNDLED WITH
-   1.16.0
+   1.16.1
